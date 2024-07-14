@@ -12,3 +12,4 @@ cython
 Pillow
 pyyaml
 requests
+gdown
