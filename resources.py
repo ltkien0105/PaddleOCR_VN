@@ -32,6 +32,6 @@ if not Path('train_data').exists():
   Path('train_data').mkdir(exist_ok=True)
 gdown.download(id=vietnamese_data, output='train_data/vietnamese.zip')
 
-if not Path('output').exists():
-  Path('output').mkdir(exist_ok=True)
-gdown.download(id=best_accuracy_model, output='output/best_accuracy.zip')
+if not Path('output/SRN').exists():
+  Path('output/SRN').mkdir(parents=True, exist_ok=True)
+gdown.download(id=best_accuracy_model, output='output/SRN/best_accuracy.zip')
