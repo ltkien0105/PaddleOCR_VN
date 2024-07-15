@@ -9,11 +9,15 @@ rec_srn_config = "10NFTNDKrig0wfATqqhLWsuhh655WdVVU"
 det_sast_model = "1_9oDB2SrO7lGBDyox6VIO-naRtUbz7R9"
 rec_srn_model = "1__xHW4ATSpMcvAEJ5mbike1UT9Mt9YY0"
 
+#Dataset
 #Vietnamese train data
-vietnamese_data = "11u4meCSJUplJvf9sj9LV8YY5Cuczx8ld"
+vietnamese_dataset = "11u4meCSJUplJvf9sj9LV8YY5Cuczx8ld"
+private_dataset = "10A_kp20dAo5r60kbp1msn64RR8QR2S9Z"
+train_data_1_dataset = "1M8_Yf8JrkH8HC6N5VPu426K8YmzCNCgm"
+train_data_2_dataset = "1rwIk-zCRCvHoqaK3FyI5vu_jlJNGKDBJ"
 
 #Best accuracy model
-best_accuracy_model = "1pSg5NQ2uVVpnS903uT2icKHxv2UJDNWJ"
+best_accuracy_model = "1_56MPK5SXtEb2Fv0p5zZiLhJL8ZKdPBN"
 
 if not Path('configs/det').exists():
   Path('configs/det').mkdir(parents=True, exist_ok=True)
@@ -30,7 +34,7 @@ gdown.download(id=rec_srn_model, output='pretrain_models/rec_r50_vd_srn_train.zi
 
 if not Path('train_data').exists():
   Path('train_data').mkdir(exist_ok=True)
-gdown.download(id=vietnamese_data, output='train_data/vietnamese.zip')
+gdown.download(id=vietnamese_dataset, output='train_data/vietnamese.zip')
 
 if not Path('output/SRN').exists():
   Path('output/SRN').mkdir(parents=True, exist_ok=True)
