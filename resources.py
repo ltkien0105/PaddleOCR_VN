@@ -38,4 +38,4 @@ gdown.download(id=vietnamese_dataset, output='train_data/vietnamese.zip')
 
 if not Path('output/SRN').exists():
   Path('output/SRN').mkdir(parents=True, exist_ok=True)
-gdown.download(id=best_accuracy_model, output='output/SRN/best_accuracy.zip')
+gdown.download(id=best_accuracy_model, output='output/best_accuracy/best_accuracy.zip')
